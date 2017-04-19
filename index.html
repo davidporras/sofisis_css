@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>Soficis - CSS</title>
+	<meta name="author" content="David Porras" />
+	<meta name="description" content="fullPage plugin by Alvaro Trigo. Create fullscreen pages fast and simple. One page scroll like iPhone website." />
+	<meta name="keywords"  content="fullpage,jquery,alvaro,trigo,plugin,fullscren,screen,full,iphone5,apple" />
+	<meta name="Resource-type" content="Document" />
+
+
+	<link rel="stylesheet" type="text/css" href="jquery.fullPage.css" />
+	<link rel="stylesheet" type="text/css" href="examples.css" />
+
+
+	<style>
+		.fp-controlArrow.fp-prev {
+		    left: 15px;
+		    width: 0;
+		    border-width: 38.5px 34px 38.5px 0;
+		    border-color: transparent #d0d0d0 transparent transparent;
+		}
+
+		.fp-controlArrow.fp-next {
+		    right: 15px;
+		    border-width: 38.5px 0 38.5px 34px;
+		    border-color: transparent #d0d0d0 transparent #d0d0d0;
+		}
+
+		h2{
+			font-size: 4em;
+		}
+
+		h1, h2, h3, h4, h5, h6 {
+			color: #9f9f9f;
+		    margin-bottom: 30px;
+		}
+		/* Sections
+		 * --------------------------------------- */
+		#section0 img,
+		#section1 img{
+			margin: 20px 0 0 0;
+		}
+		#section2 img{
+			margin: 20px 0 0 52px;
+		}
+		#section3 img{
+			bottom: 0px;
+			position: absolute;
+			margin-left: -420px;
+		}
+		.intro p{
+			width: 50%;
+			margin: 0 auto;
+			font-size: 1.5em;
+		}
+		.twitter-share-button{
+			position: absolute;
+			z-index: 99;
+			right: 149px;
+			top: 9px;
+		}
+
+	</style>
+	<!--[if IE]>
+		<script type="text/javascript">
+			 var console = { log: function() {} };
+		</script>
+	<![endif]-->
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+
+	<script type="text/javascript" src="jquery.fullPage.js"></script>
+	<script type="text/javascript" src="examples.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$('#fullpage').fullpage({
+				sectionsColor: ['#fff', '#4BBFC3', '#7BAABE', 'whitesmoke', '#ccddff'],
+				anchors: ['firstPage', 'secondPage', '3rdPage', '4thpage', 'lastPage'],
+				menu: '#menu',
+				scrollingSpeed: 1000
+			});
+
+		});
+	</script>
+
+</head>
+<body>
+
+
+<!--<ul id="menu">
+	<li data-menuanchor="firstPage"><a href="#firstPage">First slide</a></li>
+	<li data-menuanchor="secondPage"><a href="#secondPage">Second slide</a></li>
+	<li data-menuanchor="3rdPage"><a href="#3rdPage">Third slide</a></li>
+	<li data-menuanchor="4thpage"><a href="#4thpage">Fourth slide</a></li>
+</ul>-->
+
+
+<div id="fullpage">
+	<div class="section active" id="section1">
+		<div class="slide">
+			<div class="intro">
+				<h1>CSS / CSS3</h1>
+				<p>Es la forma como indicamos el diseño, colores, tamaños, etc de un sitio web, separado de la programación y la estructura de este.</p>
+				<img src="http://4.bp.blogspot.com/-QuZiJzNLNsc/VDXCVjzNP9I/AAAAAAAAFzo/SuPDsYLOxWk/s1600/seleccion-multiple-linea-sublime.gif" alt="slider" />
+			</div>
+
+		</div>
+		<div class="slide">
+			<div class="intro">
+				<h2>Estructura de un proyecto web</h2>
+				<img src="https://s3.amazonaws.com/media-p.slid.es/uploads/abaker/images/317610/userinterface-html5-css3-javascript.jpg">
+			</div>
+		</div>
+		<div class="slide">
+			<div class="intro">
+				<h2>Incluir CSS / CSS3 en nuestro proyecto</h2>
+				<p>Incluir CSS en el mismo documento HTML</p>
+				<img src="imgs/insert_css.png" alt="Compatible" />
+				<p>Incluir CSS externo</p>
+				<img src="imgs/insert_css1.png" alt="Compatible" />
+			</div>
+		</div>
+		<div class="slide">
+			<div class="intro">
+				<h2>Selectores</h2>
+				<p>Para crear diseños web profesionales, es imprescindible conocer y dominar los selectores de CSS. Como se vio en el capítulo anterior, una regla de CSS está formada por una parte llamada "selector" y otra parte llamada "declaración".</p>
+				<p>La declaración indica "qué hay que hacer" y el selector indica "a quién hay que hacérselo". Por lo tanto, los selectores son imprescindibles para aplicar de forma correcta los estilos CSS en una página.</p>
+				<p>A un mismo elemento HTML se le pueden aplicar varias reglas CSS y cada regla CSS puede aplicarse a un número ilimitado de elementos. En otras palabras, una misma regla puede aplicarse sobre varios selectores y un mismo selector se puede utilizar en varias reglas.</p>
+			</div>
+		</div>
+		<div class="slide">
+			<div class="intro">
+				<h2>Selector universal</h2>
+				<img src="imgs/selectoruniversal.png" alt="Compatible" />
+			</div>
+		</div>
+		<div class="slide">
+			<div class="intro">
+				<h2>Selector de tipo o etiqueta</h2>
+				<img src="imgs/selectoretiqueta.png" alt="Compatible" />
+			</div>
+		</div>
+		<div class="slide">
+			<div class="intro">
+				<h2>Selector descendente</h2>
+				<img src="imgs/selectordescendente.png" alt="Compatible" />
+			</div>
+		</div>
+		<div class="slide">
+			<div class="intro">
+				<h2>Selector de clase</h2>
+				<img src="imgs/selectorclase.png" alt="Compatible" />
+			</div>
+		</div>
+		<div class="slide">
+			<div class="intro">
+				<h2>Selector de ID</h2>
+				<img src="imgs/selectorid.png" alt="Compatible" />
+			</div>
+		</div>
+		<div class="slide">
+			<div class="intro">
+				<h2>Unidades de medida y colores</h2>
+				<p>Muchas de las propiedades de CSS que se ven en los próximos capítulos permiten indicar medidas y colores en sus valores. Además, CSS es tan flexible que permite indicar las medidas y colores de muchas formas diferentes.</p>
+				<p>Por este motivo, se presentan a continuación todas las alternativas disponibles en CSS para indicar las medidas y los colores. En los siguientes capítulos, cuando una propiedad pueda tomar como valor una medida o un color, no se volverán a explicar todas estas alternativas.</p>
+			</div>
+		</div>
+		<div class="slide">
+			<div class="intro">
+				<h2>Unidades absolutas</h2>
+				<img src="imgs/unidadesabsolutas.png" alt="Compatible" />
+			</div>
+		</div>
+		<div class="slide">
+			<div class="intro">
+				<h2>Unidades relativas</h2>
+				<img src="imgs/unidadesrelativa.png" alt="Compatible" />
+			</div>
+		</div>
+		<div class="slide">
+			<div class="intro">
+				<h2>Unidades porcentaje</h2>
+				<img src="imgs/unidadesporcentaje.png" alt="Compatible" />
+			</div>
+		</div>
+		<div class="slide">
+			<div class="intro">
+				<h2>Media Querys</h2>
+				<p>Una media query consiste en un tipo de medio y al menos una consulta que limita las hojas de estilo utilizando características del medio como ancho, alto y color. Se entiende como un módulo CSS3 que permite adaptar la representación del contenido a características del dispositivo. Añadido en CSS3, las media queries dejan que la presentación del contenido se adapte a un rango específico de dispositivos de salida sin tener que cambiar el contenido en sí.</p>
+				<p>Las Media queries consisten de un media type y  una o mas expresiones, implicando características del medio, la cual se resuelve como verdadera o falsa. El resultado de la consulta es verdadera si el tipo de medio especificado en el media query concuerda con el tipo de dispositivo que está siendo mostrado y todas las expresiones en el media query son verdaderas.</p>
+			</div>
+		</div>
+		<div class="slide">
+			<div class="intro">
+				<h2>Sintaxis media querys</h2>
+				<img src="imgs/mediaquerys.png">
+				<p><a href="https://developer.mozilla.org/es/docs/CSS/Media_queries" target="_blank">De clic aquí para ver más información</a></p>
+			</div>
+		</div>
+		<div class="slide">
+			<div class="intro">
+				<h2>Frameworks CSS / CSS3</h2>
+				<img src="imgs/listframeworks.png">
+			</div>
+		</div>
+	</div>
+	<div class="section" id="section2">
+		<div class="intro">
+			<h1 style="color: white;">David Porras</h1>
+			<p style="color: white;">Frontend developer and multimedia designer.</p>
+			<small>Desarrollo hecho con <a href="http://alvarotrigo.com/fullPage/" target="_blank">fullpage.js</a></small>
+		</div>
+	</div>
+</div>
+
+</body>
+</html>
